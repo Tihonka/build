@@ -1,6 +1,6 @@
 import {formatError} from "./common.js";
 
-const music = new Audio("./media/music.mp3");
+const music = new Audio("./src/media/music.mp3");
 let hoursEl = document.getElementById('hour');
 let minEl = document.getElementById('min');
 let secEl = document.getElementById('sec');
