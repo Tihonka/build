@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Datetime superapp</title>
+</head>
+
+<body>
+    <button class="dateCalc-btn btn">Калькулятор дат</button>
+    <button class="timer-btn btn">Таймер</button>
+
+
+    <form id="dateCalc-form">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="dateCalc-result"></p>
+    </form>
+
+    <form id="timer" class="invisible">
+        <h3>Таймер</h3>
+        <div class="time">
+            <input type="number" name="hours" id="hour" placeholder="00"> <span>:</span>
+            <input type="number" name="min" id="min" placeholder="00"> <span>:</span>
+            <input type="number" name="sec" id="sec" placeholder="00">
+        </div>
+        <div class="errorTimer"></div>
+        <button id="start">Старт</button>
+        <button id="stop">Стоп</button>
+    </form>
+
+</body>
+
+</html>
